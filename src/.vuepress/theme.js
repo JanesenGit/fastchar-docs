@@ -7,12 +7,12 @@ const themeConfig = hopeTheme({
     logo: '/images/logo.svg',
     logoDark: '/images/logo-dark.svg',
     //代码仓库
-    // repo: 'https://github.com/JanesenGit/FastChar-docs',
-    docsDir: 'docs',
+    repo: 'https://github.com/JanesenGit/fastchar-docs',
+    docsDir: 'src',
     darkmode: "toggle",
     navbarIcon: true,
     hostname: "https://www.fastchar.com",
-    lastUpdated: true,
+    fullscreen: true,
     iconAssets: "//at.alicdn.com/t/c/font_1142863_b6e77r7s7ug.css",
     plugins: {
         seo: true,
@@ -28,6 +28,14 @@ const themeConfig = hopeTheme({
             showInMobile: true,
         },
         docsearch: algolia,
+        comment: {
+            provider: "Giscus",
+            repo: "JanesenGit/fastchar-docs",
+            repoId: "R_kgDOLtiHVQ",
+            category: "Announcements",
+            categoryId: "DIC_kwDOLtiHVc4CeqPv",
+
+        },
     },
     locales: {
         '/': {
