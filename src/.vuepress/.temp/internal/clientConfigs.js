@@ -6,7 +6,7 @@ import clientConfig4 from '/Users/Janesen/工作/space_webstorm/fastchar-docs/no
 import clientConfig5 from '/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/@vuepress/plugin-external-link-icon/lib/client/config.js'
 import clientConfig6 from '/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
 import clientConfig7 from '/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
-import clientConfig8 from '/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/@vuepress/plugin-comment/lib/client/config.js'
+import clientConfig8 from '/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/vuepress-theme-hope/node_modules/@vuepress/plugin-comment/lib/client/config.js'
 import clientConfig9 from '/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/@vuepress/plugin-copy-code/lib/client/config.js'
 import clientConfig10 from '/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/md-enhance/config.js'
 import clientConfig11 from '/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/@vuepress/plugin-photo-swipe/lib/client/config.js'

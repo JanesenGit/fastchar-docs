@@ -7,17 +7,18 @@ IFastValidator 是FastChar核心类之一，用来验证 `FastAction` 中的参�
 
 ```java
 public class TestValidator implements IFastValidator {
-
     
-    /**
+     /**
      * 验证参数是否正确
-     * @param validator 验证器的名称
-     * @param key 参数名
-     * @param value  参数值
-     * @return 验证错误信息 为：null 验证通过，否则代表参数验证失败，需要将返回值作为错误信息响应给前端。
+     *
+     * @param validator  验证器名称
+     * @param arguments 传入的验证器参数
+     * @param paramName  参数名
+     * @param paramValue 参数值
+     * @return 验证错误信息 为：null 验证通过，否则代表参数验证失败，直接将返回值作为错误信息响应给前端。
      */
     @Override
-    public String valid(String validator, String paramName, Object paramValue) {
+    public String valid(String validator, Object[] arguments, String paramName, Object paramValue) {
         if (validator.equals("@user_exist") && paramName.equals("userId")) {
             FcUserEntity userEntity = FcUserEntity.getInstance().selectById(paramValue);
             if (userEntity != null) {
@@ -63,6 +64,8 @@ public class FastCharTestWeb implements IFastWeb {
 ### check方法调用
 方法 `check` 属于 `FastAction` 对象方法，开发者在获取参数前调用 参数验证器 验证，如下：
 
+以新建的 [TestValidator](param-validator-info.md#实现一个参数验证器) 验证器为例：
+
 ```java
 public class TestAction extends FastAction {
     /**
@@ -77,7 +80,7 @@ public class TestAction extends FastAction {
  
     public void updateUser(){
        
-        int id = check("@user_exist") //传入参数验证器名为：@user_exist  
+        int id = check("@user_exist","woment") //传入参数验证器名为：@user_exist  并携带传入验证器参数：woment
                     .check("@user_role")//传入参数验证器名为：@user_role  
                     .getParamToInt("userId");
         
@@ -92,6 +95,7 @@ public class TestAction extends FastAction {
 ### AFastCheck注解调用
 开发者可以使用 `AFastCheck` 注解标注到方法的形参中调用 参数验证器 验证，如下：
 
+以新建的 [TestValidator](param-validator-info.md#实现一个参数验证器) 验证器为例：
 ```java
 public class TestAction extends FastAction {
     /**
@@ -103,7 +107,9 @@ public class TestAction extends FastAction {
     protected String getRoute() {
         return "/test";
     }
-    public void updateUser(@AFastCheck({"@user_exist","@user_role"}) int userId){
+    public void updateUser(@AFastCheck(value="@user_exist",arguments={"women"})
+                           @AFastCheck("@user_role")
+                           int userId){
         
         /**省略其他业务判断逻辑**/
         
@@ -117,7 +123,7 @@ public class TestAction extends FastAction {
 FastChar默认内置常用的参数验证器。
 
 ### FastNullValidator
-null或空 值验证器，验证器的名称传入规则为：`@null:{message}`，如下代码：
+null或空 值验证器，验证器的名称为：`@null` 验证器第一个参数为返回的失败消息。如下代码：
 ```java
 public class TestAction extends FastAction {
     /**
@@ -130,7 +136,7 @@ public class TestAction extends FastAction {
         return "/test";
     }
     public void updateUser() int userId){
-         int id = check("@null:参数UserId不可为空！").getParamToInt("userId");
+         int id = check("@null","参数UserId不可为空！").getParamToInt("userId");
         /**省略其他业务判断逻辑**/
         responseText("更新成功！");
     }

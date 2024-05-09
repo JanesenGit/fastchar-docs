@@ -1,7 +1,7 @@
 import { defineClientConfig } from "vuepress/client";
 
 
-import { HopeIcon, Layout, NotFound, useScrollPromise, injectDarkmode, setupDarkmode, setupSidebarItems } from "/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/vuepress-theme-hope/lib/bundle/export.js";
+import { HopeIcon, Layout, NotFound, injectDarkmode, setupDarkmode, setupSidebarItems, scrollPromise } from "/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/vuepress-theme-hope/lib/bundle/export.js";
 
 import { defineCatalogInfoGetter } from "/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
 import { h } from "vue"
@@ -26,7 +26,7 @@ export default defineClientConfig({
     const { scrollBehavior } = router.options;
 
     router.options.scrollBehavior = async (...args) => {
-      await useScrollPromise().wait();
+      await scrollPromise.wait();
 
       return scrollBehavior(...args);
     };

@@ -1,0 +1,1 @@
+# FastChar-SLF4j插件

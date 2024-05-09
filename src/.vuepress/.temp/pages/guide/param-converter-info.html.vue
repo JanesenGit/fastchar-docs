@@ -2,7 +2,7 @@
 <p><code v-pre>IFastParamConverter</code> 接口是FastChar 核心组件之一，用于 <code v-pre>FastAction</code> 方法中 将 请求的参数值 转换成对应的类型。</p>
 <h2 id="实现一个参数转换器" tabindex="-1"><a class="header-anchor" href="#实现一个参数转换器"><span>实现一个参数转换器</span></a></h2>
 <p>开发者可以自定义实现 <code v-pre>IFastParamConverter</code> 类，进行参数类型的转换，如下：</p>
-<CodeTabs id="12" :data='[{"id":"TestParamConverter"},{"id":"UserBean"}]'>
+<Tabs id="12" :data='[{"id":"TestParamConverter"},{"id":"UserBean"}]'>
 <template #title0="{ value, isActive }">TestParamConverter</template>
 <template #title1="{ value, isActive }">UserBean</template>
 <template #tab0="{ value, isActive }">
@@ -26,7 +26,8 @@
         <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p></p>
+</template>
 <template #tab1="{ value, isActive }">
 <div class="language-java line-numbers-mode" data-ext="java" data-title="java"><pre v-pre class="language-java"><code>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">UserBean</span> <span class="token punctuation">{</span>
@@ -53,7 +54,7 @@
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <h2 id="注册转换器" tabindex="-1"><a class="header-anchor" href="#注册转换器"><span>注册转换器</span></a></h2>
 <p>开发者实现一个参数转换器后，需要将该实现类注册到系统中才能被系统发现并使用，注册方式如下：</p>
 <div class="language-java line-numbers-mode" data-ext="java" data-title="java"><pre v-pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FastCharTestWeb</span> <span class="token keyword">implements</span> <span class="token class-name">IFastWeb</span> <span class="token punctuation">{</span>
@@ -73,7 +74,7 @@
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="使用转换器" tabindex="-1"><a class="header-anchor" href="#使用转换器"><span>使用转换器</span></a></h2>
 <p>开发者无需显式调用参数转换器，FastChar会根据 <code v-pre>FastAction</code> 中方法的形参类型自动触发参数转换器，如下：</p>
-<CodeTabs id="36" :data='[{"id":"html"},{"id":"TestAction"}]'>
+<Tabs id="36" :data='[{"id":"html"},{"id":"TestAction"}]'>
 <template #title0="{ value, isActive }">html</template>
 <template #title1="{ value, isActive }">TestAction</template>
 <template #tab0="{ value, isActive }">
@@ -108,8 +109,20 @@
         <span class="token function">responseText</span><span class="token punctuation">(</span><span class="token string">"更新成功！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>也可以通过 <code v-pre>getParamToClass</code> 方法获取参数 类型为 <code v-pre>UserBean</code> 的参数 <code v-pre>selfUser</code>，如下：</p>
+<div class="language-java line-numbers-mode" data-ext="java" data-title="java"><pre v-pre class="language-java"><code>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">updateUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+         <span class="token class-name">UserBean</span> userBean <span class="token operator">=</span> <span class="token function">getParamToClass</span><span class="token punctuation">(</span><span class="token string">"selfUser"</span><span class="token punctuation">,</span> <span class="token class-name">FcDepartEntity</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token keyword">int</span> userId<span class="token operator">=</span>userBean<span class="token punctuation">.</span><span class="token function">getUserId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token class-name">String</span> userNickName<span class="token operator">=</span>userBean<span class="token punctuation">.</span><span class="token function">getUserNickName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token doc-comment comment">/**省略其他业务判断逻辑**/</span>
+        <span class="token function">responseText</span><span class="token punctuation">(</span><span class="token string">"更新成功！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div>
+</template>
+</Tabs>
 <h2 id="内置转换器" tabindex="-1"><a class="header-anchor" href="#内置转换器"><span>内置转换器</span></a></h2>
 <p>FastChar默认内置了常规类型的参数转换器，如下：</p>
 <h3 id="faststringparamconverter" tabindex="-1"><a class="header-anchor" href="#faststringparamconverter"><span>FastStringParamConverter</span></a></h3>

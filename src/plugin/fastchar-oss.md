@@ -1,0 +1,1 @@
+# FastChar-OSS插件

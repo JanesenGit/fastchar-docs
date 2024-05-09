@@ -1,4 +1,7 @@
 import {
+  setupDevtoolsPlugin
+} from "./chunk-UKCZNIRO.js";
+import {
   computed,
   defineComponent,
   getCurrentInstance,
@@ -16,10 +19,7 @@ import {
   unref,
   watch,
   watchEffect
-} from "./chunk-CKQ4TNQ3.js";
-import {
-  setupDevtoolsPlugin
-} from "./chunk-UKCZNIRO.js";
+} from "./chunk-RY5ODQAQ.js";
 
 // node_modules/vue-router/dist/vue-router.mjs
 var isBrowser = typeof document !== "undefined";

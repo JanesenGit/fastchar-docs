@@ -155,7 +155,7 @@ public void login(){
 ```
 
 ### 方法形参获取参数
-通过方法形参定义参数，FastChar会触发参数转换器进行数据转换，如下：
+通过方法形参定义参数，FastChar会触发[参数转换器](param-converter-info.md)进行数据转换，如下：
 ```java
 
 //形参注入
@@ -208,7 +208,7 @@ public class FastCharTestWeb implements IFastWeb {
 ### 获取 `URL` 参数
 FastAction允许获取url地址中 `/` 分割的多余地址，如下：
 
-::: code-tabs
+::: tabs
 
 @tab html
 
@@ -252,7 +252,7 @@ public class TestAction extends FastAction {
 
 FastAction 支持按照 `{prefix}.{attr}` 格式提交参数，并在后台转为 `Map` 对象，如下：
 
-::: code-tabs
+::: tabs
 
 @tab html
 
@@ -310,7 +310,7 @@ Map的 key 为 `{attr}` ，value 为 参数值
 ### 获取 `List<Map>` 参数
 FastAction 支持按照 `{prefix}[i].{attr}` 格式提交参数，并在后台转为 `List<Map>` 对象，如下：
 
-::: code-tabs
+::: tabs
 
 @tab html
 
@@ -377,7 +377,7 @@ public class TestAction extends FastAction {
 ### 获取 `List<?>` 参数
 FastAction 支持按照 `{prefix}[i]` 格式提交参数，并在后台转为 `List<?>` 对象，如下：
 
-::: code-tabs
+::: tabs
 
 @tab html
 
@@ -437,7 +437,7 @@ public class TestAction extends FastAction {
 
 FastAction 支持按照 `{prefix}.{attr}` 格式提交参数，并在后台转为 `FastEntity` 对象，如下：
 
-::: code-tabs
+::: tabs
 
 @tab html
 
@@ -497,7 +497,7 @@ public class TestAction extends FastAction {
 ### 获取 `List<FastEntity>` [数据库实体](entity-info.md) 参数
 FastAction 支持按照 `{prefix}[i].{attr}` 格式提交参数，并在后台转为 `List<FastEntity>` 对象，如下：
 
-::: code-tabs
+::: tabs
 
 @tab html
 

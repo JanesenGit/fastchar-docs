@@ -7,7 +7,7 @@ FastChar 默认集成了数据源的配置
 在[系统全局初始化](system-init.md)的时候配置数据源，以配置 `mysql` 数据库为例，如下：
 
 
-::: code-tabs
+::: tabs
 
 @tab 方式一
 ```java

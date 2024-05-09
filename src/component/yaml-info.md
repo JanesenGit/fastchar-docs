@@ -30,7 +30,7 @@ FastCharTest/
 
 读取示例如下：
 
-::: code-tabs
+::: tabs
 @tab config.yml
 
 ``` yaml
@@ -68,7 +68,7 @@ FastCharTest/
 ```
 
 读取示例如下：
-::: code-tabs
+::: tabs
 @tab redis_config.yaml
 
 ``` yaml

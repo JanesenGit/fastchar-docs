@@ -129,7 +129,7 @@
     <span class="token function">responseText</span><span class="token punctuation">(</span><span class="token string">"登录成功！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="方法形参获取参数" tabindex="-1"><a class="header-anchor" href="#方法形参获取参数"><span>方法形参获取参数</span></a></h3>
-<p>通过方法形参定义参数，FastChar会触发参数转换器进行数据转换，如下：</p>
+<p>通过方法形参定义参数，FastChar会触发<RouteLink to="/guide/param-converter-info.html">参数转换器</RouteLink>进行数据转换，如下：</p>
 <div class="language-java line-numbers-mode" data-ext="java" data-title="java"><pre v-pre class="language-java"><code>
 <span class="token comment">//形参注入</span>
 <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">login</span><span class="token punctuation">(</span><span class="token class-name">String</span> username<span class="token punctuation">,</span><span class="token class-name">String</span> password<span class="token punctuation">,</span><span class="token keyword">int</span> code<span class="token punctuation">)</span><span class="token punctuation">{</span>
@@ -169,7 +169,7 @@
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="获取-url-参数" tabindex="-1"><a class="header-anchor" href="#获取-url-参数"><span>获取 <code v-pre>URL</code> 参数</span></a></h3>
 <p>FastAction允许获取url地址中 <code v-pre>/</code> 分割的多余地址，如下：</p>
-<CodeTabs id="161" :data='[{"id":"html"},{"id":"java"}]'>
+<Tabs id="161" :data='[{"id":"html"},{"id":"java"}]'>
 <template #title0="{ value, isActive }">html</template>
 <template #title1="{ value, isActive }">java</template>
 <template #tab0="{ value, isActive }">
@@ -198,7 +198,7 @@
 <span class="token punctuation">}</span>
 
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <div class="hint-container tip">
 <p class="hint-container-title">解说</p>
 <p>由于 <code v-pre>TestAction</code> 类里未匹配到 方法 <code v-pre>param2</code>  和 方法 <code v-pre>param1</code> ，匹配到 <code v-pre>login</code> 方法，
@@ -206,7 +206,7 @@
 </div>
 <h3 id="获取-map-参数" tabindex="-1"><a class="header-anchor" href="#获取-map-参数"><span>获取 <code v-pre>Map</code> 参数</span></a></h3>
 <p>FastAction 支持按照 <code v-pre>{prefix}.{attr}</code> 格式提交参数，并在后台转为 <code v-pre>Map</code> 对象，如下：</p>
-<CodeTabs id="180" :data='[{"id":"html"},{"id":"java"}]'>
+<Tabs id="180" :data='[{"id":"html"},{"id":"java"}]'>
 <template #title0="{ value, isActive }">html</template>
 <template #title1="{ value, isActive }">java</template>
 <template #tab0="{ value, isActive }">
@@ -248,7 +248,7 @@
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlight-line">&nbsp;</div><br><br><br><br><div class="highlight-line">&nbsp;</div><br><br><br><br><br><br><br><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <div class="hint-container tip">
 <p class="hint-container-title">解说</p>
 <p>参数格式 <code v-pre>{prefix}.{attr}</code> 在 <code v-pre>FastAction</code> 调用 <code v-pre>getParamToMap</code> 方法，并传入
@@ -257,7 +257,7 @@ Map的 key 为 <code v-pre>{attr}</code> ，value 为 参数值</p>
 </div>
 <h3 id="获取-list-map-参数" tabindex="-1"><a class="header-anchor" href="#获取-list-map-参数"><span>获取 <code v-pre>List&lt;Map&gt;</code> 参数</span></a></h3>
 <p>FastAction 支持按照 <code v-pre>{prefix}[i].{attr}</code> 格式提交参数，并在后台转为 <code v-pre>List&lt;Map&gt;</code> 对象，如下：</p>
-<CodeTabs id="199" :data='[{"id":"html"},{"id":"java"}]'>
+<Tabs id="199" :data='[{"id":"html"},{"id":"java"}]'>
 <template #title0="{ value, isActive }">html</template>
 <template #title1="{ value, isActive }">java</template>
 <template #tab0="{ value, isActive }">
@@ -301,7 +301,7 @@ Map的 key 为 <code v-pre>{attr}</code> ，value 为 参数值</p>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlight-line">&nbsp;</div><br><br><br><br><br><br><br><br><br><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <div class="hint-container tip">
 <p class="hint-container-title">解说</p>
 <p>参数格式 <code v-pre>{prefix}[i].{attr}</code> 在 <code v-pre>FastAction</code> 调用 <code v-pre>getParamToMapList</code> 方法，并传入
@@ -314,7 +314,7 @@ Map的 key 为 <code v-pre>{attr}</code> ，value 为 参数值</p>
 </div>
 <h3 id="获取-list-参数" tabindex="-1"><a class="header-anchor" href="#获取-list-参数"><span>获取 <code v-pre>List&lt;?&gt;</code> 参数</span></a></h3>
 <p>FastAction 支持按照 <code v-pre>{prefix}[i]</code> 格式提交参数，并在后台转为 <code v-pre>List&lt;?&gt;</code> 对象，如下：</p>
-<CodeTabs id="226" :data='[{"id":"html"},{"id":"java"}]'>
+<Tabs id="226" :data='[{"id":"html"},{"id":"java"}]'>
 <template #title0="{ value, isActive }">html</template>
 <template #title1="{ value, isActive }">java</template>
 <template #tab0="{ value, isActive }">
@@ -351,7 +351,7 @@ Map的 key 为 <code v-pre>{attr}</code> ，value 为 参数值</p>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlight-line">&nbsp;</div><br><br><br><br><br><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <div class="hint-container tip">
 <p class="hint-container-title">解说</p>
 <p>参数格式 <code v-pre>{prefix}[i]</code> 在 <code v-pre>FastAction</code> 调用 <code v-pre>getParamToList</code> 方法，并传入
@@ -363,7 +363,7 @@ Map的 key 为 <code v-pre>{attr}</code> ，value 为 参数值</p>
 </div>
 <h3 id="获取-fastentity-数据库实体-参数" tabindex="-1"><a class="header-anchor" href="#获取-fastentity-数据库实体-参数"><span>获取 <code v-pre>FastEntity</code> <RouteLink to="/guide/entity-info.html">数据库实体</RouteLink> 参数</span></a></h3>
 <p>FastAction 支持按照 <code v-pre>{prefix}.{attr}</code> 格式提交参数，并在后台转为 <code v-pre>FastEntity</code> 对象，如下：</p>
-<CodeTabs id="250" :data='[{"id":"html"},{"id":"java"}]'>
+<Tabs id="250" :data='[{"id":"html"},{"id":"java"}]'>
 <template #title0="{ value, isActive }">html</template>
 <template #title1="{ value, isActive }">java</template>
 <template #tab0="{ value, isActive }">
@@ -401,7 +401,7 @@ Map的 key 为 <code v-pre>{attr}</code> ，value 为 参数值</p>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlight-line">&nbsp;</div><br><br><div class="highlight-line">&nbsp;</div><br><br><br><br><br><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <div class="hint-container tip">
 <p class="hint-container-title">解说</p>
 <p>参数格式 <code v-pre>{prefix}.{attr}</code> 在 <code v-pre>FastAction</code> 调用 <code v-pre>getParamToMap</code> 方法。</p>
@@ -412,7 +412,7 @@ Map的 key 为 <code v-pre>{attr}</code> ，value 为 参数值</p>
 </div>
 <h3 id="获取-list-fastentity-数据库实体-参数" tabindex="-1"><a class="header-anchor" href="#获取-list-fastentity-数据库实体-参数"><span>获取 <code v-pre>List&lt;FastEntity&gt;</code> <RouteLink to="/guide/entity-info.html">数据库实体</RouteLink> 参数</span></a></h3>
 <p>FastAction 支持按照 <code v-pre>{prefix}[i].{attr}</code> 格式提交参数，并在后台转为 <code v-pre>List&lt;FastEntity&gt;</code> 对象，如下：</p>
-<CodeTabs id="281" :data='[{"id":"html"},{"id":"java"}]'>
+<Tabs id="281" :data='[{"id":"html"},{"id":"java"}]'>
 <template #title0="{ value, isActive }">html</template>
 <template #title1="{ value, isActive }">java</template>
 <template #tab0="{ value, isActive }">
@@ -454,7 +454,7 @@ Map的 key 为 <code v-pre>{attr}</code> ，value 为 参数值</p>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlight-line">&nbsp;</div><br><br><br><br><br><br><br><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <div class="hint-container tip">
 <p class="hint-container-title">解说</p>
 <p>参数格式 <code v-pre>{prefix}[i].{attr}</code> 在 <code v-pre>FastAction</code> 调用 <code v-pre>getParamToMapList</code> 方法。</p>

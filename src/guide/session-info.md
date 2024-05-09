@@ -6,7 +6,7 @@ FastChar默认支持分布式系统的Session共享。Session数据的存储使�
 
 前端开发人员在请求后端的接口时，追加请求头 `SessionId` 即可开启使用Session共享。如下：
 
-::: code-tabs
+::: tabs
 
 @tab jquery
 

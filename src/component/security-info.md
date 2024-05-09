@@ -107,7 +107,7 @@ public void test() {
 
 ### 上述示例中的公钥与私钥
 
-::: code-tabs
+::: tabs
 
 @tab rsa_public_1024.pem
 

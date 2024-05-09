@@ -12,7 +12,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="使用freemarker" tabindex="-1"><a class="header-anchor" href="#使用freemarker"><span>使用Freemarker</span></a></h3>
 <p>开发者可以在任意代码处执行模板引擎渲染，以 <code v-pre>main</code> 方法为例，如下：</p>
-<CodeTabs id="25" :data='[{"id":"Test.java"},{"id":"test.html"},{"id":"输出内容"}]'>
+<Tabs id="25" :data='[{"id":"Test.java"},{"id":"test.html"},{"id":"输出内容"}]'>
 <template #title0="{ value, isActive }">Test.java</template>
 <template #title1="{ value, isActive }">test.html</template>
 <template #title2="{ value, isActive }">输出内容</template>
@@ -49,7 +49,8 @@
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>${product.url}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>${product.name}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>!
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p></p>
+</template>
 <template #tab2="{ value, isActive }">
 <div class="language-html line-numbers-mode" data-ext="html" data-title="html"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zh<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
@@ -62,7 +63,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <h3 id="在fastaction中使用freemarker模板引擎" tabindex="-1"><a class="header-anchor" href="#在fastaction中使用freemarker模板引擎"><span>在FastAction中使用Freemarker模板引擎</span></a></h3>
 <p>支持在FastAction直接响应模板引擎 <RouteLink to="/guide/action-out.html#fastoutfreemarker">FastOutFreemarker</RouteLink></p>
 <h2 id="thymeleaf模板引擎" tabindex="-1"><a class="header-anchor" href="#thymeleaf模板引擎"><span>Thymeleaf模板引擎</span></a></h2>
@@ -75,7 +76,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="使用thymeleaf" tabindex="-1"><a class="header-anchor" href="#使用thymeleaf"><span>使用Thymeleaf</span></a></h3>
 <p>开发者可以在任意代码处执行模板引擎渲染，以 <code v-pre>main</code> 方法为例，如下：</p>
-<CodeTabs id="58" :data='[{"id":"Test.java"},{"id":"test.html"},{"id":"输出内容"}]'>
+<Tabs id="58" :data='[{"id":"Test.java"},{"id":"test.html"},{"id":"输出内容"}]'>
 <template #title0="{ value, isActive }">Test.java</template>
 <template #title1="{ value, isActive }">test.html</template>
 <template #title2="{ value, isActive }">输出内容</template>
@@ -112,7 +113,8 @@
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name"><span class="token namespace">th:</span>href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>${product.url}<span class="token punctuation">"</span></span> <span class="token attr-name"><span class="token namespace">th:</span>text</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>${product.name}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p></p>
+</template>
 <template #tab2="{ value, isActive }">
 <div class="language-html line-numbers-mode" data-ext="html" data-title="html"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zh<span class="token punctuation">"</span></span> <span class="token attr-name"><span class="token namespace">xmlns:</span>th</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.thymeleaf.org<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
@@ -125,7 +127,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <h3 id="在fastaction中使用thymeleaf模板引擎" tabindex="-1"><a class="header-anchor" href="#在fastaction中使用thymeleaf模板引擎"><span>在FastAction中使用Thymeleaf模板引擎</span></a></h3>
 <p>支持在FastAction直接响应模板引擎 <RouteLink to="/guide/action-out.html#fastoutthymeleaf">FastOutThymeleaf</RouteLink></p>
 <h2 id="velocity模板引擎" tabindex="-1"><a class="header-anchor" href="#velocity模板引擎"><span>Velocity模板引擎</span></a></h2>
@@ -138,7 +140,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="使用velocity" tabindex="-1"><a class="header-anchor" href="#使用velocity"><span>使用Velocity</span></a></h3>
 <p>开发者可以在任意代码处执行模板引擎渲染，以 <code v-pre>main</code> 方法为例，如下：</p>
-<CodeTabs id="91" :data='[{"id":"Test.java"},{"id":"test.html"},{"id":"输出内容"}]'>
+<Tabs id="91" :data='[{"id":"Test.java"},{"id":"test.html"},{"id":"输出内容"}]'>
 <template #title0="{ value, isActive }">Test.java</template>
 <template #title1="{ value, isActive }">test.html</template>
 <template #title2="{ value, isActive }">输出内容</template>
@@ -188,7 +190,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <h3 id="在fastaction中使用velocity模板引擎" tabindex="-1"><a class="header-anchor" href="#在fastaction中使用velocity模板引擎"><span>在FastAction中使用Velocity模板引擎</span></a></h3>
 <p>支持在FastAction直接响应模板引擎 <RouteLink to="/guide/action-out.html#fastoutvelocity">FastOutVelocity</RouteLink></p>
 <h2 id="全局变量配置" tabindex="-1"><a class="header-anchor" href="#全局变量配置"><span>全局变量配置</span></a></h2>

@@ -10,7 +10,7 @@
     └── resources/
         └── config.properties <span class="token comment"># &lt;- 在这里</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>读取示例如下：</p>
-<CodeTabs id="19" :data='[{"id":"config.properties"},{"id":"java"}]'>
+<Tabs id="19" :data='[{"id":"config.properties"},{"id":"java"}]'>
 <template #title0="{ value, isActive }">config.properties</template>
 <template #title1="{ value, isActive }">java</template>
 <template #tab0="{ value, isActive }">
@@ -22,7 +22,7 @@
     <span class="token class-name">String</span> db_host<span class="token operator">=</span><span class="token class-name">FastChar</span><span class="token punctuation">.</span><span class="token function">getProperties</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getString</span><span class="token punctuation">(</span><span class="token string">"db_host"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <h2 id="获取指定名称的properties文件" tabindex="-1"><a class="header-anchor" href="#获取指定名称的properties文件"><span>获取指定名称的properties文件</span></a></h2>
 <p>允许开发者读取位于 <code v-pre>classes</code> 目录下的指定文件名的 <code v-pre>.properties</code> 文件，
 以maven项目为例，目录结构如下：</p>
@@ -32,7 +32,7 @@
     └── resources/
         └── redis_config.properties <span class="token comment"># &lt;- 在这里</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>读取示例如下：</p>
-<CodeTabs id="37" :data='[{"id":"redis_config.properties"},{"id":"java"}]'>
+<Tabs id="37" :data='[{"id":"redis_config.properties"},{"id":"java"}]'>
 <template #title0="{ value, isActive }">redis_config.properties</template>
 <template #title1="{ value, isActive }">java</template>
 <template #tab0="{ value, isActive }">
@@ -44,7 +44,7 @@
      <span class="token class-name">String</span> db_host<span class="token operator">=</span><span class="token class-name">FastChar</span><span class="token punctuation">.</span><span class="token function">getProperties</span><span class="token punctuation">(</span><span class="token string">"redis_config"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getString</span><span class="token punctuation">(</span><span class="token string">"db_host"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <h2 id="获取指定地址的properties文件" tabindex="-1"><a class="header-anchor" href="#获取指定地址的properties文件"><span>获取指定地址的properties文件</span></a></h2>
 <p>读取示例如下：</p>
 <div class="language-java line-numbers-mode" data-ext="java" data-title="java"><pre v-pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>

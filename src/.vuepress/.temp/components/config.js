@@ -1,5 +1,5 @@
 import { defineClientConfig } from "vuepress/client";
-import { hasGlobalComponent } from "/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/@vuepress/helper/lib/client/index.js";
+import { hasGlobalComponent } from "/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/vuepress-plugin-components/node_modules/@vuepress/helper/lib/client/index.js";
 
 import { useStyleTag } from "/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/@vueuse/core/index.mjs";
 import Badge from "/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";

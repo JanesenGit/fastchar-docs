@@ -16,7 +16,7 @@ FastCharTest/
 
 读取示例如下：
 
-::: code-tabs
+::: tabs
 @tab config.properties
 
 ``` properties
@@ -47,7 +47,7 @@ FastCharTest/
 ```
 
 读取示例如下：
-::: code-tabs
+::: tabs
 @tab redis_config.properties
 
 ``` properties

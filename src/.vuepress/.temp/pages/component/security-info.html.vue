@@ -74,7 +74,7 @@
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="上述示例中的公钥与私钥" tabindex="-1"><a class="header-anchor" href="#上述示例中的公钥与私钥"><span>上述示例中的公钥与私钥</span></a></h3>
-<CodeTabs id="72" :data='[{"id":"rsa_public_1024.pem"},{"id":"rsa_private_pkcs8_1024.pem"}]'>
+<Tabs id="72" :data='[{"id":"rsa_public_1024.pem"},{"id":"rsa_private_pkcs8_1024.pem"}]'>
 <template #title0="{ value, isActive }">rsa_public_1024.pem</template>
 <template #title1="{ value, isActive }">rsa_private_pkcs8_1024.pem</template>
 <template #tab0="{ value, isActive }">
@@ -99,7 +99,7 @@ q3AIOmyIZK9KqLBm+Mvi69UUAGLFtqH82RzIcitZlaftTSXAuelr+wJBAKv+WRag
 9JN5JjNiE5vo27RaQ/raS2qlW0/3dxCM02Sgk4H9U72dOULDCHC8/ij47prIN7Zs
 zyP55j7fPQrPnZs=
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 </div></template>
 
 

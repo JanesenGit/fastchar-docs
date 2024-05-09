@@ -18,7 +18,7 @@ FastChar核心组件，FastChar默认集成了 `Freemarker` `Thymeleaf` `Velocit
 
 ### 使用Freemarker 
 开发者可以在任意代码处执行模板引擎渲染，以 `main` 方法为例，如下：
-::: code-tabs
+::: tabs
 
 @tab Test.java
 ```java {16}
@@ -94,7 +94,7 @@ public static void main(String[] args) throws IOException {
 ### 使用Thymeleaf
 开发者可以在任意代码处执行模板引擎渲染，以 `main` 方法为例，如下：
 
-::: code-tabs
+::: tabs
 
 @tab Test.java
 ```java {16}
@@ -170,7 +170,7 @@ public static void main(String[] args) throws IOException {
 ### 使用Velocity
 开发者可以在任意代码处执行模板引擎渲染，以 `main` 方法为例，如下：
 
-::: code-tabs
+::: tabs
 
 @tab Test.java
 ```java {16}

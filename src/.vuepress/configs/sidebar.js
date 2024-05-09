@@ -10,8 +10,14 @@ const sidebar = {
                 '/guide/getting-started.md',
                 '/guide/system-init.md',
                 '/guide/start-server.md',
-                '/guide/start-deploy.md',
                 '/guide/server-deploy.md',
+            ],
+        },
+        {
+            text: '打包部署',
+            children: [
+                '/guide/start-deploy-embedded.md',
+                '/guide/start-deploy-split.md',
             ],
         },
         {
@@ -28,6 +34,7 @@ const sidebar = {
             text:'深入',
             children: [
                 '/guide/overrider-info.md',
+                '/guide/scanner-info.md',
                 '/guide/interceptor-info.md',
                 '/guide/data-cache-info.md',
                 '/guide/data-xml-info.md',
@@ -66,6 +73,18 @@ const sidebar = {
                 '/changelog/README.md',
             ],
         },
+    ],
+    "/plugin":[
+        {
+            text: '插件',
+            children:[
+                '/plugin/fastchar-oss.md',
+                '/plugin/fastchar-security.md',
+                '/plugin/fastchar-slf4j.md',
+                '/plugin/fastchar-job.md',
+                '/plugin/fastchar-http.md',
+            ]
+        }
     ]
 };
 

@@ -279,7 +279,7 @@ jedis、lettuce和redisson必须只能引用其中一个，否则操作redis异�
 ### 配置EhCache2
 - 配置类 `FastEhCache2Config` 
 
-::: code-tabs
+::: tabs
 
 @tab 配置示例
 
@@ -367,7 +367,7 @@ public class FastCharTestWeb implements IFastWeb {
 ### 配置EhCache3
 - 配置类 `FastEhCache3Config`
 
-::: code-tabs
+::: tabs
 
 @tab 配置示例
 

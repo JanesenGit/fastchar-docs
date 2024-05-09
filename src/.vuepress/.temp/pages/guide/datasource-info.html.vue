@@ -2,7 +2,7 @@
 <p>FastChar 默认集成了数据源的配置</p>
 <h2 id="单个数据源配置" tabindex="-1"><a class="header-anchor" href="#单个数据源配置"><span>单个数据源配置</span></a></h2>
 <p>在<RouteLink to="/guide/system-init.html">系统全局初始化</RouteLink>的时候配置数据源，以配置 <code v-pre>mysql</code> 数据库为例，如下：</p>
-<CodeTabs id="12" :data='[{"id":"方式一"},{"id":"方式二"}]'>
+<Tabs id="12" :data='[{"id":"方式一"},{"id":"方式二"}]'>
 <template #title0="{ value, isActive }">方式一</template>
 <template #title1="{ value, isActive }">方式二</template>
 <template #tab0="{ value, isActive }">
@@ -50,7 +50,7 @@
      <span class="token doc-comment comment">/**此处省略其他代码**/</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <h2 id="多个数据源配置" tabindex="-1"><a class="header-anchor" href="#多个数据源配置"><span>多个数据源配置</span></a></h2>
 <p>在<RouteLink to="/guide/system-init.html">系统全局初始化</RouteLink>的时候配置数据源，以配置 <code v-pre>mysql</code> 数据库为例，如下：</p>
 <div class="language-java line-numbers-mode" data-ext="java" data-title="java"><pre v-pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FastCharTestWeb</span> <span class="token keyword">implements</span> <span class="token class-name">IFastWeb</span> <span class="token punctuation">{</span>

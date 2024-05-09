@@ -4,7 +4,7 @@
 ## 实现一个参数转换器
 开发者可以自定义实现 `IFastParamConverter` 类，进行参数类型的转换，如下：
 
-::: code-tabs
+::: tabs
 
 @tab TestParamConverter
 
@@ -89,7 +89,7 @@ public class FastCharTestWeb implements IFastWeb {
 ## 使用转换器
 开发者无需显式调用参数转换器，FastChar会根据 `FastAction` 中方法的形参类型自动触发参数转换器，如下：
 
-::: code-tabs
+::: tabs
 @tab html
 
 ```html

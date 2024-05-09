@@ -227,7 +227,7 @@
 <ul>
 <li>配置类 <code v-pre>FastEhCache2Config</code></li>
 </ul>
-<CodeTabs id="197" :data='[{"id":"配置示例"},{"id":"ehcache2.xml的内容"}]'>
+<Tabs id="197" :data='[{"id":"配置示例"},{"id":"ehcache2.xml的内容"}]'>
 <template #title0="{ value, isActive }">配置示例</template>
 <template #title1="{ value, isActive }">ehcache2.xml的内容</template>
 <template #tab0="{ value, isActive }">
@@ -289,7 +289,7 @@
 	<span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ehcache</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <h2 id="使用ehcache3作为缓存" tabindex="-1"><a class="header-anchor" href="#使用ehcache3作为缓存"><span>使用EhCache3作为缓存</span></a></h2>
 <p>如果开发者需要使用<a href="https://www.ehcache.org/" target="_blank" rel="noopener noreferrer">EhCache3<ExternalLinkIcon/></a>作为FastChar的缓存介质，只要在项目中引用相应的EhCache3工具包并完成EhCache3配置即可。</p>
 <p>以maven项目为例，在pom.xml中加入如下引用：</p>
@@ -304,7 +304,7 @@
 <ul>
 <li>配置类 <code v-pre>FastEhCache3Config</code></li>
 </ul>
-<CodeTabs id="225" :data='[{"id":"配置示例"},{"id":"ehcache3.xml的内容"}]'>
+<Tabs id="225" :data='[{"id":"配置示例"},{"id":"ehcache3.xml的内容"}]'>
 <template #title0="{ value, isActive }">配置示例</template>
 <template #title1="{ value, isActive }">ehcache3.xml的内容</template>
 <template #tab0="{ value, isActive }">
@@ -366,7 +366,7 @@
 	<span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ehcache</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
-</CodeTabs>
+</Tabs>
 <h2 id="优先级-1" tabindex="-1"><a class="header-anchor" href="#优先级-1"><span>优先级</span></a></h2>
 <p>如果redis、ehcache2和ehcache3的相关jar包都存在项目中</p>
 <p>FastChar 选择的优先级为：<code v-pre>redis &gt; ehcache3 &gt; ehcache2</code></p>
