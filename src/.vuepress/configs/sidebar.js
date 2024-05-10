@@ -76,11 +76,16 @@ const sidebar = {
     ],
     "/plugin":[
         {
-            text: '插件',
+            text: '常用',
             children:[
                 '/plugin/fastchar-oss.md',
                 '/plugin/fastchar-security.md',
                 '/plugin/fastchar-slf4j.md',
+            ]
+        },
+        {
+            text: '其他',
+            children:[
                 '/plugin/fastchar-job.md',
                 '/plugin/fastchar-http.md',
             ]

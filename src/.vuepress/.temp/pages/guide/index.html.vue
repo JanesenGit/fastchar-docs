@@ -16,7 +16,7 @@
 <li>拥有与mybatis相同的一级缓存机制。极大的减轻了数据库压力。</li>
 <li>支持多种数据源使用，TomcatJDBCPool、Druid和C3P0。</li>
 <li>多数据库配置，支持动态切换数据库，事务提交多数据库。</li>
-<li>支持插件模块Jar包的动态加载、更新、卸载，实现模块之间的绝对隔离，各自负责各自事，相互之间绝对不影响。</li>
+<li>集成了众多优秀的第三方组件，便于开发者直接使用。</li>
 </ul>
 <h2 id="和spring框架区别" tabindex="-1"><a class="header-anchor" href="#和spring框架区别"><span>和Spring框架区别</span></a></h2>
 <p>FastChar主张代码可阅读性高、以最通俗易读的编程方式去实现业务功能逻辑。适用于需要快速开发Web应用的团队使用。</p>

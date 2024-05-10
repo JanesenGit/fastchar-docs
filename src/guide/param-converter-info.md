@@ -134,7 +134,7 @@ public class TestAction extends FastAction {
 
 ```java
     public void updateUser(){
-         UserBean userBean = getParamToClass("selfUser", FcDepartEntity.class);
+         UserBean userBean = getParamToClass("selfUser", UserBean.class);
          int userId=userBean.getUserId();
          String userNickName=userBean.getUserNickName();
         /**省略其他业务判断逻辑**/

@@ -1,7 +1,7 @@
 # 快速上手
 
 ## 依赖环境
-FastChar 要求Java1.8以上版本。
+FastChar 要求Java1.8以上版本，兼容支持Servlet2.0、Servlet3.0
 
 ## 运行容器
 [tomcat](http://tomcat.apache.org/)、[jetty](https://eclipse.dev/jetty/)、[undertow](https://undertow.io/)

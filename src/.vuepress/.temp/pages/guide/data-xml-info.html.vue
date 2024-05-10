@@ -168,7 +168,7 @@ FastChar 会自动识别 xml 里内容与数据库进行匹配实现如下几个
 <li>必填：否</li>
 <li>类型：<code v-pre>String</code></li>
 <li>可选值：按照使用的数据库规则配置！</li>
-<li>默认：<code v-pre>utf-8</code></li>
+<li>默认：<code v-pre>utf8mb4</code></li>
 </ul>
 <h3 id="value" tabindex="-1"><a class="header-anchor" href="#value"><span>value</span></a></h3>
 <ul>
