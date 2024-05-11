@@ -1,3 +1,4 @@
-# 介绍
-FastChar官网开发的插件包，开发者可以选择使用。
-
+# 官方插件
+<div class="catalog-display-container">
+  <Catalog base='/plugin/' />
+</div>

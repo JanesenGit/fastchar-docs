@@ -12,6 +12,18 @@
 独立项目的jar包，不建议打包成 fat-jar 项目，如果需要引用第三方插件，在主项目配置引用即可。
 :::
 
+## 原则
+FastChar建议开发者在开发插件的原则是：代码中完成`直观可追溯`的配置，然后`直接使用`。
+
+```flow
+st=>start: 引用插件
+e=>end: 使用插件
+op1=>operation: 配置插件
+
+st(right)->op1(right)->e
+```
+
+
 ## 实现
 
 ==**在项目打包成jar时，必须在 `META-INF/MANIFEST.MF` 中配置属性 `FastChar-Scanner:true`**==

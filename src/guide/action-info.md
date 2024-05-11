@@ -247,7 +247,6 @@ public class TestAction extends FastAction {
 而未匹配到的将以url参数形式传递给方法 `login` 中
 :::
 
-
 ### 获取 `Map` 参数
 
 FastAction 支持按照 `{prefix}.{attr}` 格式提交参数，并在后台转为 `Map` 对象，如下：
@@ -305,7 +304,6 @@ public class TestAction extends FastAction {
 参数前缀 `{prefix}` 即可将相同前缀的参数合并为 `Map` 对象，
 Map的 key 为 `{attr}` ，value 为 参数值
 :::
-
 
 ### 获取 `List<Map>` 参数
 FastAction 支持按照 `{prefix}[i].{attr}` 格式提交参数，并在后台转为 `List<Map>` 对象，如下：
@@ -371,9 +369,6 @@ public class TestAction extends FastAction {
 其中 i 是可变的数字，仅用来 正序排序 参数，不代表 `List` 中的子项 下标
 :::
 
-
-
-
 ### 获取 `List<?>` 参数
 FastAction 支持按照 `{prefix}[i]` 格式提交参数，并在后台转为 `List<?>` 对象，如下：
 
@@ -428,10 +423,6 @@ public class TestAction extends FastAction {
 ::: danger 注意
 其中 i 是可变的数字，仅用来 正序排序 参数，不代表 `List` 中的子项 下标
 :::
-
-
-
-
 
 ### 获取 `FastEntity` [数据库实体](entity-info.md) 参数
 
@@ -492,7 +483,6 @@ public class TestAction extends FastAction {
 
 `FastEntity` 的 key 为 `{attr}` ，value 为 参数值
 :::
-
 
 ### 获取 `List<FastEntity>` [数据库实体](entity-info.md) 参数
 FastAction 支持按照 `{prefix}[i].{attr}` 格式提交参数，并在后台转为 `List<FastEntity>` 对象，如下：
@@ -560,13 +550,6 @@ public class TestAction extends FastAction {
 ::: danger 注意
 其中 i 是可变的数字，仅用来 正序排序 参数，不代表 `List` 中的子项 下标
 :::
-
-
-
-
-
-
-
 
 ## 获取Session
 开发者按照如下方式即可获取到Session对象，如下：

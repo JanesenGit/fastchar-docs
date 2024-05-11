@@ -1,2 +1,4 @@
-# 介绍
-## 比较懒，等待更新中……
+# 常见问题
+<div class="catalog-display-container">
+  <Catalog base='/question/' />
+</div>

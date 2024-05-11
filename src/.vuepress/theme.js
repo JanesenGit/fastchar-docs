@@ -22,7 +22,9 @@ const themeConfig = hopeTheme({
             mark: true,
             imgLazyload: true,
             imgMark: true,
-            imgSize: true
+            imgSize: true,
+            flowchart:true,
+            print: true,
         },
         copyCode: {
             showInMobile: true,

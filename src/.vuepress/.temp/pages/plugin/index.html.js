@@ -1,16 +1,3 @@
 import comp from "/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/index.html.vue"
-const data = JSON.parse("{\"path\":\"/plugin/\",\"title\":\"介绍\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"介绍 FastChar官网开发的插件包，开发者可以选择使用。\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://www.fastchar.com/plugin/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"FastChar\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"介绍\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"介绍 FastChar官网开发的插件包，开发者可以选择使用。\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"介绍\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.07,\"words\":20},\"filePathRelative\":\"plugin/README.md\",\"autoDesc\":true}")
+const data = JSON.parse("{\"path\":\"/plugin/\",\"title\":\"官方插件\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"官方插件\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://www.fastchar.com/plugin/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"FastChar\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"官方插件\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"官方插件\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-05-09T07:13:10.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-05-09T07:13:10.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"官方插件\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-05-09T07:13:10.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"git\":{\"createdTime\":1712970045000,\"updatedTime\":1715238790000,\"contributors\":[{\"name\":\"Janesen\",\"email\":\"863139453@qq.com\",\"commits\":2}]},\"readingTime\":{\"minutes\":0.05,\"words\":14},\"filePathRelative\":\"plugin/README.md\",\"localizedDate\":\"2024年4月13日\",\"autoDesc\":true}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

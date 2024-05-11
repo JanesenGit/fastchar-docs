@@ -7,7 +7,9 @@
 <p class="hint-container-title">注意</p>
 <p>独立项目的jar包，不建议打包成 fat-jar 项目，如果需要引用第三方插件，在主项目配置引用即可。</p>
 </div>
-<h2 id="实现" tabindex="-1"><a class="header-anchor" href="#实现"><span>实现</span></a></h2>
+<h2 id="原则" tabindex="-1"><a class="header-anchor" href="#原则"><span>原则</span></a></h2>
+<p>FastChar建议开发者在开发插件的原则是：代码中完成<code v-pre>直观可追溯</code>的配置，然后<code v-pre>直接使用</code>。</p>
+<FlowChart id="flowchart-26" code="eJwrLrG1Ky5JLCqxUni6Z+rzKSue9U96snsbV6qtXWpeipXCk737EYL5BYa2dvkFqUWJJZn5eVYKL1t7n+9dB5XkKi7RKMpMzyjR1AWqMYSzU7kA1e8ukQ==" preset="vue"></FlowChart><h2 id="实现" tabindex="-1"><a class="header-anchor" href="#实现"><span>实现</span></a></h2>
 <p><mark><strong>在项目打包成jar时，必须在 <code v-pre>META-INF/MANIFEST.MF</code> 中配置属性 <code v-pre>FastChar-Scanner:true</code></strong></mark></p>
 <p>表示允许 <RouteLink to="/guide/scanner-info.html">扫描器</RouteLink>扫描此jar包。</p>
 <p>完成配置后即可实现一个插件项目了。</p>

@@ -2,6 +2,28 @@ export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/index.html.js"), meta: {"t":"FastChar"} }],
+  ["/changelog/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/changelog/index.html.js"), meta: {"t":"FastChar更新日志"} }],
+  ["/component/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/index.html.js"), meta: {"t":"介绍"} }],
+  ["/component/agency-info.html", { loader: () => import(/* webpackChunkName: "agency-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/agency-info.html.js"), meta: {"t":"动态代理组件"} }],
+  ["/component/cache-info.html", { loader: () => import(/* webpackChunkName: "cache-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/cache-info.html.js"), meta: {"t":"持久化Cache缓存组件"} }],
+  ["/component/cache-memory-info.html", { loader: () => import(/* webpackChunkName: "cache-memory-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/cache-memory-info.html.js"), meta: {"t":"系统内存Cache缓存组件"} }],
+  ["/component/fast-json-wrap.html", { loader: () => import(/* webpackChunkName: "fast-json-wrap.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/fast-json-wrap.html.js"), meta: {"t":"FastJsonWrap组件"} }],
+  ["/component/fast-map-wrap.html", { loader: () => import(/* webpackChunkName: "fast-map-wrap.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/fast-map-wrap.html.js"), meta: {"t":"FastMapWrap组件"} }],
+  ["/component/json-info.html", { loader: () => import(/* webpackChunkName: "json-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/json-info.html.js"), meta: {"t":"Json组件"} }],
+  ["/component/locker-info.html", { loader: () => import(/* webpackChunkName: "locker-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/locker-info.html.js"), meta: {"t":"分布式锁组件"} }],
+  ["/component/mq-info.html", { loader: () => import(/* webpackChunkName: "mq-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/mq-info.html.js"), meta: {"t":"消息队列MQ组件"} }],
+  ["/component/properties-info.html", { loader: () => import(/* webpackChunkName: "properties-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/properties-info.html.js"), meta: {"t":"Properties组件"} }],
+  ["/component/pubsub-info.html", { loader: () => import(/* webpackChunkName: "pubsub-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/pubsub-info.html.js"), meta: {"t":"消息订阅PubSub组件"} }],
+  ["/component/security-info.html", { loader: () => import(/* webpackChunkName: "security-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/security-info.html.js"), meta: {"t":"内容加解密组件"} }],
+  ["/component/template-info.html", { loader: () => import(/* webpackChunkName: "template-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/template-info.html.js"), meta: {"t":"模板引擎组件"} }],
+  ["/component/yaml-info.html", { loader: () => import(/* webpackChunkName: "yaml-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/yaml-info.html.js"), meta: {"t":"Yaml组件"} }],
+  ["/plugin/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/index.html.js"), meta: {"t":"官方插件"} }],
+  ["/plugin/fastchar-devtools.html", { loader: () => import(/* webpackChunkName: "fastchar-devtools.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/fastchar-devtools.html.js"), meta: {"t":"FastChar-DevTools插件"} }],
+  ["/plugin/fastchar-http.html", { loader: () => import(/* webpackChunkName: "fastchar-http.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/fastchar-http.html.js"), meta: {"t":"FastChar-Http插件"} }],
+  ["/plugin/fastchar-job.html", { loader: () => import(/* webpackChunkName: "fastchar-job.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/fastchar-job.html.js"), meta: {"t":"FastChar-Job插件"} }],
+  ["/plugin/fastchar-oss.html", { loader: () => import(/* webpackChunkName: "fastchar-oss.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/fastchar-oss.html.js"), meta: {"t":"FastChar-OSS插件"} }],
+  ["/plugin/fastchar-security.html", { loader: () => import(/* webpackChunkName: "fastchar-security.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/fastchar-security.html.js"), meta: {"t":"FastChar-Security插件"} }],
+  ["/plugin/fastchar-slf4j.html", { loader: () => import(/* webpackChunkName: "fastchar-slf4j.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/fastchar-slf4j.html.js"), meta: {"t":"FastChar-SLF4j插件"} }],
   ["/guide/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/guide/index.html.js"), meta: {"t":"介绍"} }],
   ["/guide/action-info.html", { loader: () => import(/* webpackChunkName: "action-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/guide/action-info.html.js"), meta: {"t":"控制器"} }],
   ["/guide/action-out.html", { loader: () => import(/* webpackChunkName: "action-out.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/guide/action-out.html.js"), meta: {"t":"响应请求"} }],
@@ -23,44 +45,7 @@ export const routes = Object.fromEntries([
   ["/guide/start-deploy-split.html", { loader: () => import(/* webpackChunkName: "start-deploy-split.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/guide/start-deploy-split.html.js"), meta: {"t":"分离式项目"} }],
   ["/guide/start-server.html", { loader: () => import(/* webpackChunkName: "start-server.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/guide/start-server.html.js"), meta: {"t":"本地测试"} }],
   ["/guide/system-init.html", { loader: () => import(/* webpackChunkName: "system-init.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/guide/system-init.html.js"), meta: {"t":"全局初始化"} }],
-  ["/changelog/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/changelog/index.html.js"), meta: {"t":"FastChar更新日志"} }],
-  ["/question/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/question/index.html.js"), meta: {"t":"介绍"} }],
-  ["/component/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/index.html.js"), meta: {"t":"介绍"} }],
-  ["/component/agency-info.html", { loader: () => import(/* webpackChunkName: "agency-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/agency-info.html.js"), meta: {"t":"动态代理组件"} }],
-  ["/component/cache-info.html", { loader: () => import(/* webpackChunkName: "cache-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/cache-info.html.js"), meta: {"t":"持久化Cache缓存组件"} }],
-  ["/component/cache-memory-info.html", { loader: () => import(/* webpackChunkName: "cache-memory-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/cache-memory-info.html.js"), meta: {"t":"系统内存Cache缓存组件"} }],
-  ["/component/fast-json-wrap.html", { loader: () => import(/* webpackChunkName: "fast-json-wrap.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/fast-json-wrap.html.js"), meta: {"t":"FastJsonWrap组件"} }],
-  ["/component/fast-map-wrap.html", { loader: () => import(/* webpackChunkName: "fast-map-wrap.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/fast-map-wrap.html.js"), meta: {"t":"FastMapWrap组件"} }],
-  ["/component/json-info.html", { loader: () => import(/* webpackChunkName: "json-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/json-info.html.js"), meta: {"t":"Json组件"} }],
-  ["/component/locker-info.html", { loader: () => import(/* webpackChunkName: "locker-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/locker-info.html.js"), meta: {"t":"分布式锁组件"} }],
-  ["/component/mq-info.html", { loader: () => import(/* webpackChunkName: "mq-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/mq-info.html.js"), meta: {"t":"消息队列MQ组件"} }],
-  ["/component/properties-info.html", { loader: () => import(/* webpackChunkName: "properties-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/properties-info.html.js"), meta: {"t":"Properties组件"} }],
-  ["/component/pubsub-info.html", { loader: () => import(/* webpackChunkName: "pubsub-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/pubsub-info.html.js"), meta: {"t":"消息订阅PubSub组件"} }],
-  ["/component/security-info.html", { loader: () => import(/* webpackChunkName: "security-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/security-info.html.js"), meta: {"t":"内容加解密组件"} }],
-  ["/component/template-info.html", { loader: () => import(/* webpackChunkName: "template-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/template-info.html.js"), meta: {"t":"模板引擎组件"} }],
-  ["/component/yaml-info.html", { loader: () => import(/* webpackChunkName: "yaml-info.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/component/yaml-info.html.js"), meta: {"t":"Yaml组件"} }],
-  ["/plugin/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/index.html.js"), meta: {"t":"介绍"} }],
-  ["/plugin/fastchar-http.html", { loader: () => import(/* webpackChunkName: "fastchar-http.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/fastchar-http.html.js"), meta: {"t":"FastChar-Http插件"} }],
-  ["/plugin/fastchar-job.html", { loader: () => import(/* webpackChunkName: "fastchar-job.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/fastchar-job.html.js"), meta: {"t":"FastChar-Job插件"} }],
-  ["/plugin/fastchar-oss.html", { loader: () => import(/* webpackChunkName: "fastchar-oss.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/fastchar-oss.html.js"), meta: {"t":"FastChar-OSS插件"} }],
-  ["/plugin/fastchar-security.html", { loader: () => import(/* webpackChunkName: "fastchar-security.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/fastchar-security.html.js"), meta: {"t":"FastChar-Security插件"} }],
-  ["/plugin/fastchar-slf4j.html", { loader: () => import(/* webpackChunkName: "fastchar-slf4j.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/plugin/fastchar-slf4j.html.js"), meta: {"t":"FastChar-SLF4j插件"} }],
+  ["/question/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/question/index.html.js"), meta: {"t":"常见问题"} }],
+  ["/question/overrider-exception.html", { loader: () => import(/* webpackChunkName: "overrider-exception.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/question/overrider-exception.html.js"), meta: {"t":"Could not initialize class ……"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/404.html.js"), meta: {"t":""} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}

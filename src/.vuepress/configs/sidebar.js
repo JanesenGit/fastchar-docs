@@ -81,6 +81,7 @@ const sidebar = {
                 '/plugin/fastchar-oss.md',
                 '/plugin/fastchar-security.md',
                 '/plugin/fastchar-slf4j.md',
+                '/plugin/fastchar-devtools.md'
             ]
         },
         {
@@ -90,6 +91,14 @@ const sidebar = {
                 '/plugin/fastchar-http.md',
             ]
         }
+    ],
+    "/question":[
+        {
+            text: '常见错误',
+            children:[
+                '/question/overrider-exception.md',
+            ]
+        },
     ]
 };
 

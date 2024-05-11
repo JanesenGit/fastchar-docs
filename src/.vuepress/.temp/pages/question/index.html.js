@@ -1,16 +1,3 @@
 import comp from "/Users/Janesen/工作/space_webstorm/fastchar-docs/src/.vuepress/.temp/pages/question/index.html.vue"
-const data = JSON.parse("{\"path\":\"/question/\",\"title\":\"介绍\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"介绍 比较懒，等待更新中……\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://www.fastchar.com/question/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"FastChar\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"介绍\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"介绍 比较懒，等待更新中……\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"介绍\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[]}\"]]},\"headers\":[{\"level\":2,\"title\":\"比较懒，等待更新中……\",\"slug\":\"比较懒-等待更新中\",\"link\":\"#比较懒-等待更新中\",\"children\":[]}],\"readingTime\":{\"minutes\":0.03,\"words\":10},\"filePathRelative\":\"question/README.md\",\"autoDesc\":true}")
+const data = JSON.parse("{\"path\":\"/question/\",\"title\":\"常见问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"常见问题\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://www.fastchar.com/question/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"FastChar\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"常见问题\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"常见问题\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-04-13T01:00:45.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-04-13T01:00:45.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"常见问题\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-04-13T01:00:45.000Z\\\",\\\"author\\\":[]}\"]]},\"headers\":[],\"git\":{\"createdTime\":1712970045000,\"updatedTime\":1712970045000,\"contributors\":[{\"name\":\"Janesen\",\"email\":\"863139453@qq.com\",\"commits\":1}]},\"readingTime\":{\"minutes\":0.05,\"words\":14},\"filePathRelative\":\"question/README.md\",\"localizedDate\":\"2024年4月13日\",\"autoDesc\":true}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
