@@ -13,6 +13,8 @@ const themeConfig = hopeTheme({
     navbarIcon: true,
     hostname: "https://www.fastchar.com",
     fullscreen: true,
+    displayFooter: true,
+    footer: "Copyright © 2018-2024 FastChar🇨🇳. All rights reserved",
     iconAssets: "//at.alicdn.com/t/c/font_1142863_b6e77r7s7ug.css",
     plugins: {
         seo: true,
@@ -26,6 +28,7 @@ const themeConfig = hopeTheme({
             flowchart:true,
             print: true,
         },
+        copyright: false,
         copyCode: {
             showInMobile: true,
         },

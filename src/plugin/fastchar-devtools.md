@@ -1,4 +1,4 @@
-# FastChar-DevTools插件
+# FastChar-DevTools
 
 ## 介绍
 本地开发者工具，主要用于在使用内嵌式服务运行项目的时候可以开启web资源热加载功能。

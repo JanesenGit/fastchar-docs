@@ -1,4 +1,4 @@
-# FastChar-Http插件
+# FastChar-Http
 
 ## 介绍
 网络请求插件，主要集成了[okhttp](https://square.github.io/okhttp/)和[httpclient](http://hc.apache.org/httpcomponents-client-ga)工具包，开发者只要关注http请求即可，FastChar-Http将根据项目中引用的jar包自动切换使用okhttp或httpclient。

@@ -1,4 +1,4 @@
-# FastChar-OSS插件
+# FastChar-OSS
 
 ## 介绍
 主要用于操作OSS对象存储服务器，方便开发者快速的对接OSS对象存储服务器，目前已对接的OSS服务器有：[阿里云OSS](https://www.aliyun.com/product/oss)、

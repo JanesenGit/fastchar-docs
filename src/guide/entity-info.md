@@ -39,11 +39,7 @@ public class FcUserEntity extends FastEntity<FcUserEntity> {
 
 以上代码中，方法getTableName是FastEntity的抽象方法，必须实现。用于绑定Entity与数据库中的表格。绑定后即可对表格进行增删查改等一系列数据库操作！
 
-::: warning
-以下代码未显式指定数据源，则以系统配置的默认数据源为准。
-:::
-
-### 插入数据
+### 添加数据
 
 ```java
 FcUserEntity fcUserEntity = new FcUserEntity();
@@ -82,8 +78,65 @@ fcUserEntity.set("userNickName", "新的昵称");
 fcUserEntity.update();
 ```
 
+### 填充数据
+- 原理：当数据不存在时添加数据，当数据存在时则修改数据。
+
+::: tabs
+
+@tab 方式一
+```java
+FcUserEntity fcUserEntity = new FcUserEntity();
+fcUserEntity.set("userPhone", "186****9665");//对应表格里的字段 userPhone
+fcUserEntity.set("userNickName", "用户昵称");//对应表格里的字段 userNickName
+fcUserEntity.set("userCity", "合肥");//对应表格里的字段 userCity
+fcUserEntity.push("userPhone");//将根据userPhone属性值进行判断数据是否存在
+```
+
+@tab 方式二
+```java
+FcUserEntity fcUserEntity = new FcUserEntity();
+fcUserEntity.set("userPhone", "186****9665");//对应表格里的字段 userPhone
+fcUserEntity.set("userNickName", "用户昵称");//对应表格里的字段 userNickName
+fcUserEntity.set("userCity", "合肥");//对应表格里的字段 userCity
+FastHanlder hanlder=new FastHanlder();
+fcUserEntity.push(hanlder,"userPhone");//将根据userPhone属性值进行判断数据是否存在
+
+int resultType=hanlder.getCode();
+//操作句柄，根据code判断数据最终是添加还是更新 【0：添加 1：更新】
+
+```
+:::
+
+::: tip
+虽然 `fcUserEntity` 对象也设置了其他属性值，但是在调用 `push` 方法时，指定使用 `userPhone` 属性进行条件判断，所以其他属性不会影响方法结果。
+:::
+
+
+
+### 统计数据
+- 原理：根据指定属性值进行数据统计
+
+```java
+FcUserEntity fcUserEntity = new FcUserEntity();
+fcUserEntity.set("userPhone", "186****9665");//对应表格里的字段 userPhone
+fcUserEntity.set("userNickName", "用户昵称");//对应表格里的字段 userNickName
+fcUserEntity.set("userCity", "合肥");//对应表格里的字段 userCity
+int count=fcUserEntity.count("userPhone");//将根据userPhone属性值进行条件判断统计数据，
+```
+
+::: tip
+虽然 `fcUserEntity` 对象也设置了其他属性值，但是在调用 `count` 方法时，指定使用 `userPhone` 属性进行条件判断，所以其他属性不会影响方法结果。
+:::
+
+
+
 ### 属性值为NULL
 如果需要清空数据库表格中某个属性值，可以设置属性值为字符串 `"<null>"` 或者 `null` , 如下：
+
+::: tabs
+
+@tab 方式一
+
 ```java
 //使用entity的set方法设置需要修改的属性值
 FcUserEntity fcUserEntity = new FcUserEntity();
@@ -92,7 +145,7 @@ fcUserEntity.set("userNickName", "<null>");
 fcUserEntity.update();
 ```
 
-或者
+@tab 方式二
 
 ```java
 //使用entity的set方法设置需要修改的属性值
@@ -100,6 +153,13 @@ FcUserEntity fcUserEntity = new FcUserEntity();
 fcUserEntity.set("userNickName",null);
 fcUserEntity.update();
 ```
+:::
+
+
+::: warning
+以上演示代码中未显式指定数据源，则以系统配置的默认数据源为准。
+:::
+
 
 
 ### 切换数据源

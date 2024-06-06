@@ -1,0 +1,22 @@
+.theme-container {
+  .vp-nav-links {
+    .route-link-active {
+      &::after {
+        inset: auto 0 0;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.route-link-active {
+  color: var(--theme-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.vp-sidebar-heading   {
+  font-weight: bold;
+}

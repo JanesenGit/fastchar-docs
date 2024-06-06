@@ -27,5 +27,6 @@ features:
   details: 自动识别数据库文件xml，做到框架自动创建数据库、表格、字段，让开发人员只关注业务代码编写，
 - title: 插件
   details: 支持插件模块Jar包的动态加载、更新、卸载，实现模块之间的绝对隔离，降解耦合！
-footer: Copyright © 2018-2024 FastChar. All rights reserved
+copyright: false
+footer: Copyright © 2018-2024 FastChar🇨🇳. All rights reserved
 ---

@@ -1,11 +1,10 @@
 import { defineClientConfig } from "vuepress/client";
-
-
 import { HopeIcon, Layout, NotFound, injectDarkmode, setupDarkmode, setupSidebarItems, scrollPromise } from "/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/vuepress-theme-hope/lib/bundle/export.js";
 
 import { defineCatalogInfoGetter } from "/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
 import { h } from "vue"
 
+import "/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
 import "/Users/Janesen/工作/space_webstorm/fastchar-docs/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
 
 defineCatalogInfoGetter((meta) => {

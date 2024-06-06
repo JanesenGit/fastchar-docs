@@ -29,7 +29,7 @@ export default defineUserConfig({
     locales: {
         '/': {
             lang: 'zh-CN',
-            title: 'FastChar',
+            title: 'FastChar🇨🇳',
             description: 'FastChar官方文档网站',
         },
     },

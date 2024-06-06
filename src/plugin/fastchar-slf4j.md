@@ -1,4 +1,4 @@
-# FastChar-SLF4j插件
+# FastChar-SLF4j
 
 ## 介绍
 快速接入Log4j2的插件。

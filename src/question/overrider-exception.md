@@ -10,7 +10,7 @@ Exception in thread "main" com.fastchar.exception.FastOverrideException: Could n
 ```
 
 ## 原因
-发生这个错误的原因是开发者在使用代理器实例化某个对象时，在FastChar的代理器未发现实现此接口或抽象类的子类，所以会抛出这个异常信息。
+发生这个错误的原因是在使用代理器实例化某个对象时，在FastChar的代理器中未发现实现此接口或抽象类的子类，所以会抛出这个异常信息。
 
 ## 解决
 开发者只要实现对象的接口或抽象类，然后[注册到代理器](../guide/overrider-info.md#代理类的注册)中即可。

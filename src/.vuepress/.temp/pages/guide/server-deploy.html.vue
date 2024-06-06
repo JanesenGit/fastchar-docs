@@ -17,7 +17,7 @@
 <li>节省宽带</li>
 </ul>
 <h3 id="开始部署" tabindex="-1"><a class="header-anchor" href="#开始部署"><span>开始部署</span></a></h3>
-<p>建议使用第三方一键环境部署工具，此处推荐使用 <a href="https://oneinstack.com/install/" target="_blank" rel="noopener noreferrer">oneinstack<ExternalLinkIcon/></a>  一键部署服务器，永久免费方便！</p>
+<p>建议使用第三方一键环境部署工具，此处推荐使用 <a href="https://oneinstack.com/install/" target="_blank" rel="noopener noreferrer">oneinstack</a>  一键部署服务器，永久免费方便！</p>
 <div class="hint-container tip">
 <p class="hint-container-title">提示</p>
 <p>最近免费工具都比较卷，不清楚这个工具会不会商业化收费，所以建议开发者将安装包下载到本地电脑做备份，安装包内包含了源码，开发者可以简单学习修改！</p>

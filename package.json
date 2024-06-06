@@ -8,13 +8,13 @@
     "docs:update-package": "npx vp-update"
   },
   "dependencies": {
-    "@vuepress/client": "^2.0.0-rc.9",
-    "@vuepress/plugin-docsearch": "^2.0.0-rc.24",
-    "@vuepress/bundler-vite": "2.0.0-rc.9",
-    "@vuepress/plugin-comment": "^2.0.0-rc.20",
-    "vue": "^3.4.21",
-    "vuepress": "2.0.0-rc.9",
-    "vuepress-theme-hope": "2.0.0-rc.38",
+    "@vuepress/client": "^2.0.0-rc.13",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.34",
+    "@vuepress/bundler-vite": "2.0.0-rc.13",
+    "@vuepress/plugin-comment": "2.0.0-rc.34",
+    "vue": "^3.4.27",
+    "vuepress": "2.0.0-rc.13",
+    "vuepress-theme-hope": "2.0.0-rc.48",
     "tree-node-cli": "^1.6.0",
     "badge-maker": "^3.3.1",
     "flowchart.ts": "^3.0.0"

@@ -46,8 +46,13 @@
 
 ```
 
+### 打包结果
+最终会打包成一个独立的`project.jar`包。
+
+
+
 ## 打包thin-jar部署
-顾名思义 打包“廋”jar包，将项目第三方引用包和项目运行包分离打包，这样可以做到下次更新项目运行包的时候不用重复打包引用的包，
+顾名思义 打包“廋”jar包，将项目第三方引用包和项目运行包分离打包，这样可以做到下次更新项目运行包的时候不用重复打包第三方jar包，
 减少打包时间。
 
 以maven项目为例，在pom.xml加入插件即可，如下：
@@ -120,6 +125,13 @@
 此处配置使用了maven的 profiles 配置，所以在使用maven打包时，请勾选中相应的 Profiles 
 :::
 
+### 打包结果
+最终打包会生成 `lib` 文件夹和 `project.jar` 包。
+
+::: info 说明
+lib 是存放项目引用的所有第三方jar包，所以lib文件夹与project.jar文件必须处于同一级别目录下。
+:::
+
 
 
 ## 演示
@@ -145,7 +157,7 @@ war和fatjar两种打包方式，在maven项目中，都是在maven执行到 pac
 然后在重复 [fat-jar打包的操作](start-deploy-embedded.md#fat-jar打包maven项目)
 
 
-## Linux运行JAR包的脚本构建
+## linux运行jar包的脚本构建
 
 ### 第一步
 在服务器任意位置新建 `server.sh` 文件。
@@ -199,11 +211,13 @@ esac
 
 ### 使用说明
 
-启动或重启JAR包命令： `server.sh start`;
+命令行中，进入 `server.sh` 所在目录后执行如下命令：
 
-启动或重启JAR包并携带参数命令： `server.sh start deploy`;
+* 启动或重启JAR包命令： `server.sh start`;
 
-停止JAR包命令： `server.sh stop`;
+* 启动或重启JAR包并携带参数命令： `server.sh start deploy`;
+
+* 停止JAR包命令： `server.sh stop`;
 
 
 

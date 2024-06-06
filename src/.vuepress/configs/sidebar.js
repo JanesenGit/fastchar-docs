@@ -85,6 +85,14 @@ const sidebar = {
             ]
         },
         {
+            text: '内嵌式Server',
+            children:[
+                '/plugin/fastchar-server-undertow.md',
+                '/plugin/fastchar-server-jetty.md',
+                '/plugin/fastchar-server-tomcat.md',
+            ]
+        },
+        {
             text: '其他',
             children:[
                 '/plugin/fastchar-job.md',
@@ -97,6 +105,12 @@ const sidebar = {
             text: '常见错误',
             children:[
                 '/question/overrider-exception.md',
+            ]
+        },
+        {
+            text: '其他',
+            children:[
+                '/question/fastchar-demo.md',
             ]
         },
     ]

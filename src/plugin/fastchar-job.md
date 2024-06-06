@@ -1,4 +1,4 @@
-# FastChar-Job插件
+# FastChar-Job
 
 ## 介绍
 快速对接[quartz](https://www.quartz-scheduler.org/)插件。

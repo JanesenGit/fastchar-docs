@@ -1,4 +1,4 @@
-# FastChar-Security插件
+# FastChar-Security
 
 ## 介绍
 接口安全验证的工具包，使用FastChar-Security工具包，开发者可以快速的将接口加入安全验证，无效改动项目代码。

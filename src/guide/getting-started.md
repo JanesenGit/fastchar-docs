@@ -1,7 +1,7 @@
 # 快速上手
 
 ## 依赖环境
-FastChar 要求Java1.8以上版本，兼容支持Servlet2.0、Servlet3.0
+FastChar 支持Java1.8以上版本（Java8、Java9、Java11、Java20或以上），已灵活兼容Servlet2.0（javax.servlet.\*）、Servlet3.0（jakarta.servlet.\*）
 
 ## 运行容器
 [tomcat](http://tomcat.apache.org/)、[jetty](https://eclipse.dev/jetty/)、[undertow](https://undertow.io/)
@@ -12,7 +12,7 @@ Maven搭建项目，按照以下三步即可极速搭建FastChar项目，推荐�
 ::: warning
 以下的代码演示所使用的FastChar版本必须在2.0.0以上。
 :::
-- **步骤 1**: 在pom.xml中加入fastchar的[![Maven Central](https://img.shields.io/maven-central/v/com.fastchar/fastchar?label=maven-fastchar)](https://mvnrepository.com/artifact/com.fastchar/fastchar)引用，如下代码：
+- **步骤 1**: 在pom.xml中加入fastchar的[![Maven Central](https://img.shields.io/maven-central/v/com.fastchar/fastchar?label=maven-fastchar)](https://mvnrepository.com/artifact/com.fastchar/fastchar) [Github](https://github.com/JanesenGit/FastChar) 引用，如下代码：
 
 ```xml
 <dependency>

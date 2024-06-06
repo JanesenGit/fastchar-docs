@@ -154,7 +154,7 @@ public void show() throws Exception {
 }
 ```
 
-### 代码块切换数据源
+### 代码块或线程切换数据源
 
 在FastChar中，通过FastDatabases对象的lock方法可以随意切换数据源，**_lock方法是线程安全_**，如下：
 ```java
@@ -174,6 +174,12 @@ public void show() {
     responseText(userEntity.getTableDetails());
 }
 ```
+
+::: info 说明
+在相同的线程中锁定了数据源，那么此线程下的所有数据操作，都将使用被锁定的数据源。
+:::
+
+
 
 ### [数据库实体类切换数据源](entity-info.md#指定数据源)
 

@@ -1,5 +1,5 @@
 <template><div><h1 id="介绍" tabindex="-1"><a class="header-anchor" href="#介绍"><span>介绍</span></a></h1>
-<p>FastChar是以Java语言为基础的WEB+ORM开源免费的MVC框架，设计原理符合一般Web框架规则。学习成本低、代码少、极易上手、零配置，极大的提高开发效率，减少错误率！</p>
+<p>FastChar是以Java语言为基础的WEB+ORM开源免费的MVC框架，设计原理符合一般Web框架规则。学习成本低、代码少、极易上手、零配置，极大的提高开发效率，减少错误率！主张以原生API进行开发。</p>
 <h2 id="特点" tabindex="-1"><a class="header-anchor" href="#特点"><span>特点</span></a></h2>
 <ul>
 <li>代码设计采用了Builder（构造）设计模式。灵活性更高、阅读更简单。</li>
@@ -19,9 +19,10 @@
 <li>集成了众多优秀的第三方组件，便于开发者直接使用。</li>
 </ul>
 <h2 id="和spring框架区别" tabindex="-1"><a class="header-anchor" href="#和spring框架区别"><span>和Spring框架区别</span></a></h2>
-<p>FastChar主张代码可阅读性高、以最通俗易读的编程方式去实现业务功能逻辑。适用于需要快速开发Web应用的团队使用。</p>
+<p>FastChar主张代码可阅读性高、以原生API进行开发、以最通俗易读的编程方式去实现业务功能逻辑。适用于需要快速开发Web应用的团队使用。</p>
 <p>FastChar使用门槛极低，只要掌握了Java基本的编程思想都可以快速上手。</p>
-<p>Spring的优点众多这里就不赘述了。</p>
+<p>Spring的优点这里就不赘述了。😇</p>
+<p><mark>特别烦Spring众多注解的可以来入坑了。 🤪</mark></p>
 </div></template>
 
 
